@@ -1,1 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font: 'Delius', sans-serif;
+}
 
+p {
+    font-size: 150%
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: aqua;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    background-color: blanchedalmond;
+    width: 300px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    width: 200px;
+}
+
+.logo h2 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+} 
+
+.nav {
+    background-color: brown;
+    display: flex;
+    width: 400px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+}
+
+.intro {
+    background-image: url(/Futuras-main/img/imagemGranito.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+
+}
+
+.titulo {
+
+    width: 700px;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    line-height: 0.9;
+    color: #F5f2d0;
+    text-shadow: 5px 5px 5px rgba(82, 68, 160, 0.5);
+}
+
+#mim {
+    background-color: orange;
+    margin-top: 20px;
+    width: 1400px;
+    display: flex;
+
+}
+
+#job {
+    background-color: orchid;
+}
+
+footer {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+footer h4 {
+    font-size: 25px;
+}
+
+footer form {
+    background-color: blueviolet;
+    padding: 30px;
+}
+
+footer label {
+    padding: 8px;
+    font-size: large;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc; 
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
