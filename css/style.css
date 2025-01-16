@@ -1,7 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-    font: 'Delius', sans-serif;
+    font-family: 'Delius', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 p {
@@ -13,12 +17,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     height: 100vh;
 }
 
 header {
-    background-color: aqua;
+    background-color:#F5f2d;
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -50,12 +53,14 @@ a {
 } 
 
 .nav {
-    background-color: brown;
+    background-color: #ad8dc6;
     display: flex;
     width: 400px;
     padding: 20px;
     border-radius: 30px;
 }
+
+
 
 header ul {
     display: flex;
@@ -66,8 +71,19 @@ header ul {
     font-weight: bold;
 }
 
+main{
+    background-color: #F5f2d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
 .intro {
     background-image: url(/Futuras-main/img/imagemGranito.webp);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,27 +98,177 @@ header ul {
 }
 
 .titulo {
-
     width: 700px;
 }
 
 .titulo h1 {
     font-size: 50px;
     line-height: 0.9;
-    color: #F5f2d0;
     text-shadow: 5px 5px 5px rgba(82, 68, 160, 0.5);
 }
 
 #mim {
-    background-color: orange;
-    margin-top: 20px;
+    background-color: #ad8dc6 ;
+    margin-top: 40px;
     width: 1400px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.eu {
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.4;
 
 }
 
+.eu ul {
+    list-style-position: inside;
+    line-height: 1.4;
+    padding: 25px;
+    font-style: ;
+}
+
+
 #job {
-    background-color: orchid;
+    background-color: #ad8dc6;
+    width: 1400px;
+    
+}
+
+.job-cards {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.flip-card {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+#job img {
+    box-shadow: 10px 10px 10px rgba(122, 119, 119, 0.562);
+    border-radius: 20px;
+}
+
+#oi {
+    background-color: #ad8dc6;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.oi {
+    width: 70%;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#hobbi {
+    background-color: #ad8dc6;
+    width: 1400px;
+    margin-bottom: 40px ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+   
+}
+
+.subtitulo {
+    padding: 30px;
+}
+
+.hobbi-cards {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.flip-card {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+#hobbi img {
+    box-shadow: 10px 10px 10px rgba(122, 119, 119, 0.562);
+    border-radius: 20px;
 }
 
 footer {
