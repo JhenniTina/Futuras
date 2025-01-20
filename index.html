@@ -12,38 +12,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/Futuras-main/css/style.css">
+    <link rel="stylesheet" href="/Futuras-main/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <header class="header">
+        <div id="inicio">
+
+            <div class="logo">
                 <img src="/Futuras-main/img/gato.gif" alt="" style="width: 120px; height: 120px;" >
                 <h2>Portifólio</h2>
+            </div>
         </div>
-        <div class="nav">
+        
+    </header>
+    
+    <header class="header2">
+        <nav class="nav">
             <ul>
+                <a href="#inicio">
+                    <li>Início</li>
+                </a>
+
                 <a href="#mim">
                     <li>Sobre mim</li>
-                 </a>
-                 <a href="#job">
-                     <li>Projetos</li>
-                 </a>
+                </a>
+                
+                <a href="#projeto">
+                    <li>Projetos</li>
+                </a>
+                
+                <a href="#job">
+                    <li>Trabalhos</li>
+                </a>
 
-                 <a href="#oi ">
-                    <li>oi</li>
-                 </a>
-
-                 <a href="#hobbi">
-                     <li>Hobbies</li>
-                 </a>
-
-              
+                <a href="#contato">Contato</a>
             </ul>
-        </div>
-
-        
-    
+        </nav>
     </header>
+
     <main>
         <div class="intro">
 
@@ -60,7 +67,6 @@
                 <div class="eu">
                     <p>
                         Olá, me chamo Jhennifer! Sou autista nível 1 de suporte e atualmente estou concluindo técnico em informática. Participo do programa futuras cientistas, sou uma pessoa direta e sincera, gosto de estar sempre aprendendo coisas novas. Sou uma das líderes do projeto BearWorld, um server de minecraft RP multilinguístico, onde aprendi a trabalhar colaborativamente em equipe. Alguns dos meus hobbies são:
-
                     </p> 
 
                     <ul>
@@ -70,13 +76,12 @@
                     </ul>
                     
                 </div>
-               
             </div>
-            <div id="job">
+            <div id="projeto">
                 <div class="subtitulo">
                     <h2>Projetos</h2>
                 </div>
-                <section class="job-cards">
+                <section class="pro-cards">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -84,9 +89,9 @@
                                 <img src="/Futuras-main/img/6.png" alt="Logo BearWorld" style="width: 300px; height: 300px;">
                             </div>
                             <div class="flip-card-back">
-                                <a href="https://discord.gg/N3H6qTWFxQ"></a>
                                 <h3>BearWorld</h3>
                                 <img src="/Futuras-main/img/GifBw.gif" alt="" style="width: 300px; height: 300px; object-fit: cover">
+
                             </div>
                         </div>
                     </div>
@@ -94,7 +99,7 @@
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3>Futuras cientistas</h3>
-                                <img src="/Futuras-main/img/4.png" alt="Logo BearWorld" style="width: 300px; height: 300px;">
+                                <img src="/Futuras-main/img/f.png" alt="Logo BearWorld" style="width: 300px; height: 300px;">
                             </div>
                             <div class="flip-card-back">
                                 <a href="https://discord.gg/N3H6qTWFxQ"></a>
@@ -119,24 +124,13 @@
                 </section>
             </div>
 
-            <div id="oi">
-                <div class="subtitulo">
-
-                    <h2>oi</h2>
-                </div>
-                <div class="oi">
-
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil fugiat, dolor fuga quas quibusdam ea eum voluptatibus at, voluptatum sint quos porro totam asperiores enim. Architecto obcaecati exercitationem iste veritatis.</p>
-
-                </div>
-
             </div>
 
-            <div id="hobbi">
+            <div id="job">
                 <div class="subtitulo">
-                    <h2>Hobbies</h2> 
+                    <h2>Trabalhos</h2> 
                 </div>
-                <section class="hobbi-cards">
+                <section class="job-cards">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -187,8 +181,24 @@
 
                 <button id="botaoEnviar">Enviar</button>
         </form>
+        <ul class="contato" id="contato">
+            <a class="item-contato" href="https://www.instagram.com/tinamsantanna/" target="_blank">
+                <i class="fa-brands fa-instagram" style="color: #fffaf0;"></i>
+                <h5>@Tinamsantanna</h5>
+            </a>
+            <li class="item-contato">
+<i class="fa-solid fa-phone" style="color: #fffaf0;"></i>
+                <h5>+55 27 99600-1386</h5>
+            </li>
+            <a class="item-contato" href="mailto:jhenifercms@gmail.com">
+                <i class="fa-solid fa-envelope" style="color: #fffaf0;"></i>
+                <h5>jhennifercms@gmail.com</h5>
+            </a>
+            <a class="item-contato" href="https://www.youtube.com/@TinaCristinaS2" target="_blank">
+                <i class="fa-brands fa-youtube" style="color: #fffaf0;"></i>
+                <h5>@TinaCristinaS2</h5>
+            </a>
+        </ul>
     </footer>
-   
 </body>
 </html>
-    
