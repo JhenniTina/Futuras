@@ -1,0 +1,20 @@
+<h1 id="meuTitulo">Titulo Original</h1>
+<button onclick="mudarTitulo()">Clique para mudar</button>
+
+<input type="text" id="campoTexto">
+
+<button class="button">Clique aqui</button>
+<script>
+    function mudarTitulo(){
+        document.getElementById("meuTitulo").innerText = "Titulo Alterado!";
+    }
+
+    document.getElementById("campoTexto").addEventListener("keydown", function(event){
+        console.log(`tecla precionada:${event.key}`);
+    });
+
+    document.querySelector("button").addEventListener("click",function () {
+        alert("você clicou no botão!");
+    });
+
+</script>
